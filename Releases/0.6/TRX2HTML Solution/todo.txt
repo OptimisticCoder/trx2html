@@ -1,0 +1,39 @@
+
+añadir info entorno
+añadir pruebas/refactoring de JS
+
+Revisar precisión redondeo de TS
+Mostrar trazas como descripciones para los tests ok
+
+
+Tratar ignores, incloncusive--> outcomes
+
+
+Crear estructura TestRunInfo
+Colección TestRunInfo
+Extraer lógica
+
+
+
+notes....
+
+
+ public enum TestOutcome
+    {
+        Error = 0,
+        Min = 0,
+        Failed = 1,
+        Timeout = 2,
+        Aborted = 3,
+        Inconclusive = 4,
+        PassedButRunAborted = 5,
+        NotRunnable = 6,
+        NotExecuted = 7,
+        Disconnected = 8,
+        Warning = 9,
+        Passed = 10,
+        Completed = 11,
+        InProgress = 12,
+        Pending = 13,
+        Max = 13,
+    }

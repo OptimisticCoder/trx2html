@@ -1,0 +1,9 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="testRidoTasks">
+
+	<UsingTask TaskName="RidoTasks.trx2html"
+				   AssemblyFile="RidoTasks.trx2html\bin\debug\RidoTasks.dll" />
+
+	<Target Name="testRidoTasks">    
+		<RidoTasks.trx2html FileName="trx2html.Test\DemoTRX\SampleVS90.trx" />
+  </Target>
+</Project>

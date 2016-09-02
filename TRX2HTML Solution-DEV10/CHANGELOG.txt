@@ -1,0 +1,6 @@
+0.3.0.0
+First Version published @ GotDotNet
+Announce here http://blogs.msdn.com/rido/archive/2006/05/23/trx2html.aspx
+
+0.4.0.0
+Added MSBuild Task, and demo code to include in TeamBuild

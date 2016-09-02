@@ -1,0 +1,1 @@
+mstest /testcontainer:trx2html.Test\bin\debug\trx2html.Test.dll 
