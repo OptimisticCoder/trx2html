@@ -1,5 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C917736F-50BF-4653-BF8F-9C80E78C8418}"
 	ProjectSection(SolutionItems) = preProject
 		CHANGELOG.txt = CHANGELOG.txt
@@ -35,29 +37,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Img2B64", "Img2B64\Img2B64.csproj", "{76C5961A-21CC-4CB0-9840-1553F96DF77A}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs04
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = RidoTasks.trx2html\\RidoTasks.trx2html.csproj
-		SccProjectName1 = RidoTasks.trx2html
-		SccLocalPath1 = RidoTasks.trx2html
-		SccProjectUniqueName2 = trx2html.Test\\trx2html.Test.csproj
-		SccProjectTopLevelParentUniqueName2 = TRX2HTML\u0020Solution.sln
-		SccProjectName2 = trx2html.Test
-		SccLocalPath2 = trx2html.Test
-		SccProjectUniqueName3 = trx2html\\trx2html.csproj
-		SccProjectName3 = trx2html
-		SccLocalPath3 = trx2html
-		SccProjectUniqueName4 = SampleReport\\SampleReport.csproj
-		SccProjectTopLevelParentUniqueName4 = TRX2HTML\u0020Solution.sln
-		SccProjectName4 = SampleReport
-		SccLocalPath4 = SampleReport
-	EndGlobalSection
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = TRX2HTML Solution.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
@@ -74,7 +53,6 @@ Global
 		{1DF93D37-F740-42E3-81D6-FB648F4F2F04}.Release|x86.ActiveCfg = Release|x86
 		{1DF93D37-F740-42E3-81D6-FB648F4F2F04}.Release|x86.Build.0 = Release|x86
 		{F4D02D29-A695-4C81-B423-4A7A8A99B335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4D02D29-A695-4C81-B423-4A7A8A99B335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4D02D29-A695-4C81-B423-4A7A8A99B335}.Debug|x86.ActiveCfg = Debug|x86
 		{F4D02D29-A695-4C81-B423-4A7A8A99B335}.Debug|x86.Build.0 = Debug|x86
 		{F4D02D29-A695-4C81-B423-4A7A8A99B335}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -109,7 +87,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{EF8684C1-83B7-43C3-AA01-F089CF02BBDB} = {53C38F02-E43B-4EE2-8B99-A44A76F103C6}
 		{F4D02D29-A695-4C81-B423-4A7A8A99B335} = {53C38F02-E43B-4EE2-8B99-A44A76F103C6}
+		{EF8684C1-83B7-43C3-AA01-F089CF02BBDB} = {53C38F02-E43B-4EE2-8B99-A44A76F103C6}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TRX2HTML Solution.vsmdi
 	EndGlobalSection
 EndGlobal

@@ -229,7 +229,7 @@ namespace trx2html.Parser
 		{
 			result.Append(@"<table id='tSummaryDetail'  border='0' width='900px' >                              
 							  <tr>
-								<th colspan='7'>Failed TestClasses Summary (<a href='#' onclick='showAllTestClassesSummary()'> Show All</a> )</th>
+								<th colspan='7'>ALL TestClasses Summary (<a href='#' onclick='showAllTestClassesSummary()'> Show All</a> )</th>
 							  </tr>
 							  <tr>
 								<th>Class Name</th>
@@ -242,10 +242,10 @@ namespace trx2html.Parser
 							  </tr>");
 			foreach (var testClass in run.TestClassList)
 			{
-				result.AppendFormat("<tr style=\"display:{0}\" >", testClass.Status == "Succeed" ? "none" : "block");
+				result.Append("<tr>");
 				result.AppendFormat("<td><a href='#{0}'>{1}</a></td>", testClass.Name,testClass.Name);
 				result.AppendFormat("<td>{0}%</td>", testClass.Percent); 
-				result.AppendFormat("<td width=\"80px\">{0}</td>", CreateHtmlBars(testClass)); 
+				result.AppendFormat("<td style=\"padding:5px;\">{0}</td>", CreateHtmlBars(testClass)); 
 				result.AppendFormat("<td>{0}</td>", testClass.Success);
 				result.AppendFormat("<td>{0}</td>", testClass.Failed);
 				result.AppendFormat("<td>{0}</td>", testClass.Ignored);
