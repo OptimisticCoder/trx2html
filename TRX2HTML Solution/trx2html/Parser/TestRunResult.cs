@@ -142,7 +142,7 @@ namespace trx2html.Parser
         {
             get
             {
-                return TestMethods.Where(m => m.Status == "Inconclusive").Count();
+                return TestMethods.Where(m => m.Status == "Inconclusive" || m.Status == "Skipped" || m.Status == "NotExecuted").Count();
             }
         }
 
@@ -260,7 +260,7 @@ namespace trx2html.Parser
         {
             get
             {
-                return TestMethodRunList.Where(t => t.Status == "Inconclusive" || t.Status=="NotRunnable" || t.Status=="Aborted").Count();
+                return TestMethodRunList.Where(t => t.Status == "Inconclusive" || t.Status=="NotRunnable" || t.Status=="Aborted"  || t.Status=="Skipped" || t.Status=="NotExecuted").Count();
             }
         }
 
