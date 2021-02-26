@@ -73,7 +73,8 @@ namespace trx2html.Parser
             XNamespace ns = "http://microsoft.com/schemas/VisualStudio/TeamTest/2010";
 
             string name = doc.Document.Root.Attribute("name").Value;
-            string runUser = doc.Document.Root.Attribute("runUser").Value;
+            var userAttr = doc.Document.Root.Attributes().FirstOrDefault(x => x.Name.LocalName == "runUser");
+            string runUser = userAttr == null ? "NA" : userAttr.Value;
             var unitTests = doc.Descendants(ns + "UnitTest").ToList<XElement>();           
             var unitTestResults = doc.Descendants(ns + "UnitTestResult").ToList<XElement>();
             var result = from u in unitTests
